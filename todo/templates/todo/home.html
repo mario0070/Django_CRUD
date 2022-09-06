@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+<main>
+
+    <div class="set1">
+        <h1>welcome</h1>
+        <form action="" method="post">
+            {%csrf_token%}
+            {{form}}
+        <button class="btn">Create</button>
+        </form>
+    </div>
+
+    <div class="mid">
+        <p class="left"></p>
+        <p class="circle"></p>
+        <p class="right"></p>
+        <p class="eye"></p>
+    </div>
+
+    <div class="set2">
+        <h2>Check Your Name Here</h2>
+    {%for i in todo%}
+        <p class="this">Lastname : <strong>{{i.lname}}</strong></p>
+        <p>Fistname : <strong>{{i.fname}}</strong></p>
+        <div class="links">
+            <a href="{%url 'update' i.id%}">update</a>
+            <a href="{%url 'delete' i.id%}">delete</a>
+        </div>
+    {%endfor%}
+    </div>
+
+</main>
+
+<script src="{%static 'home.js' %}"></script>
+</body>
+</html>

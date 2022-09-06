@@ -1,0 +1,141 @@
+body{
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.set1{
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 100vh;
+    width: 30%;
+    color: white;
+    position: fixed;
+}
+
+.set1 h1{
+    background-color: black;
+    margin-top: 0;
+    text-align: center;
+    padding: .6em;
+}
+
+form{
+    margin: 25% 25%;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+form input{
+    display: block;
+    margin-bottom: 2.2em;
+    border: 1px solid gray;
+    border-radius: .5em;
+    padding: .6em;
+    font-size: 1em;
+}
+
+form label{
+    font-weight: 900;
+}
+
+form button{
+    margin-left: 5em;
+    font-weight: 900;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+
+.set2{
+    background-color: rgba(0, 0, 0, 0.32);
+    height: 100vh;
+    width: 30%;
+    color: white;
+    position: fixed;
+    margin-left: 70%;
+    text-align: center;
+    padding: 2em;
+    overflow: scroll;
+}
+
+.set2 .links{
+    margin-bottom: 3em;
+    border-bottom: 2px solid white;
+    padding-bottom: 1em;
+}
+
+strong{
+    color: cyan;
+    text-transform: uppercase;
+}
+
+.set2 .links a{
+    padding-bottom: 1em;
+    color: cyan;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 2em;
+}
+
+.set2 h2{
+    font-weight: 900;
+    position: fixed;
+    background-color: black;
+    width: 30%;
+    transform: translateY(-52px) translateX(-30px);
+    padding: 1em;
+
+}
+
+.set2 .this{
+    margin-top: 5em;
+
+}
+
+.mid{
+    position: fixed;
+    margin: 20% 31%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid .left{
+    background-color:white ;
+    height: 2em;
+    width: 10em;
+    border-bottom-left-radius: 1.9em;
+}
+
+.mid .circle{
+    background-color:rgba(0, 0, 0, 0.324);
+    height: 10em;
+    width: 10em;
+    border-radius: 5em;
+    transform: translateY(-65px);
+}
+
+.mid .eye{
+    background-color:white;
+    height: 5em;
+    width: 5em;
+    border-radius: 5em;
+    transform: translateX(-279px) translateY(-25px);
+}
+
+.mid .right{
+    background-color:white ;
+    height: 2em;
+    width: 10em;
+    border-bottom-right-radius: 1.9em;
+}
